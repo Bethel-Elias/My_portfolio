@@ -1244,6 +1244,53 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
+
+.portfolio .portfolio-item img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    transition:0.4s;
+}
+.portfolio .portfolio-item{
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:.3s;
+    background:#fff;
+}
+
+.portfolio .portfolio-item:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+}
+
+.portfolio .portfolio-item:hover img{
+    transform:scale(1.08);
+}
+.portfolio .portfolio-item .portfolio-info{
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:-100%;
+    background:rgba(0,0,0,.82);
+    color:white;
+    padding:20px;
+    transition:.4s;
+}
+
+.portfolio .portfolio-item:hover .portfolio-info{
+    bottom:0;
+}
+
+.portfolio .portfolio-info h4{
+    color:#fff;
+    margin-bottom:8px;
+}
+
+.portfolio .portfolio-info p{
+    color:#ddd;
+}
+
 /*--------------------------------------------------------------
 # Service Details Section
 --------------------------------------------------------------*/
